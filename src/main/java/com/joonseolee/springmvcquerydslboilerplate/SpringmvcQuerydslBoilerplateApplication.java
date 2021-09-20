@@ -8,13 +8,11 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 @EnableConfigurationProperties
 @SpringBootApplication(exclude = {
-        DataSourceAutoConfiguration.class,
-        FlywayAutoConfiguration.class
+        DataSourceAutoConfiguration.class
 })
 public class SpringmvcQuerydslBoilerplateApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringmvcQuerydslBoilerplateApplication.class, args);
     }
-
 }

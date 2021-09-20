@@ -15,13 +15,3 @@ datasource:
     ddl-auto: none
     show-sql: true
     format-sql: true
-
-spring:
-  flyway:
-#    baseline-on-migrate: true
-#    baseline-version: 0
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/demo?serverTimezone=Asia/Seoul
-    user: root
-    password: password
-    enabled: true
