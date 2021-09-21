@@ -1,3 +1,33 @@
+spring:
+  profiles:
+    group:
+      local: local,common
+      alpha: alpha,common
+      real: real,common
+    default: local
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: common
+operation:
+  swagger:
+    title: boilerplate
+    description: be
+    version: 1.0.0
+    contact-name: joonseolee
+    contact-url: github.com/joonseolee
+    contact-email: niceweather94@gmail.com
+    ant-pattern: /api/**
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
 datasource:
   main:
     master:
@@ -16,12 +46,50 @@ datasource:
     show-sql: true
     format-sql: true
 
-operation:
-  swagger:
-    title: boilerplate
-    description: be
-    version: 1.0.0
-    contact-name: joonseolee
-    contact-url: github.com/joonseolee
-    contact-email: niceweather94@gmail.com
-    ant-pattern: /api/**
+---
+
+spring:
+  config:
+    activate:
+      on-profile: alpha
+datasource:
+  main:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/alpha?serverTimezone=Asia/Seoul
+      username: root
+      password: password
+    slaves:
+      -
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3307/alpha?serverTimezone=Asia/Seoul
+        username: root
+        password: password
+  jpa:
+    ddl-auto: none
+    show-sql: true
+    format-sql: true
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: real
+datasource:
+  main:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/demo?serverTimezone=Asia/Seoul
+      username: root
+      password: password
+    slaves:
+      -
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3307/demo?serverTimezone=Asia/Seoul
+        username: root
+        password: password
+  jpa:
+    ddl-auto: none
+    show-sql: true
+    format-sql: true
