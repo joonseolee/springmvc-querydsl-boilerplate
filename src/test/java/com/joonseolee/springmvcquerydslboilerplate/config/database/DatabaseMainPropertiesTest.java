@@ -1,5 +1,6 @@
-package com.joonseolee.springmvcquerydslboilerplate.config;
+package com.joonseolee.springmvcquerydslboilerplate.config.database;
 
+import com.joonseolee.springmvcquerydslboilerplate.config.database.DatabaseMainProperties;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

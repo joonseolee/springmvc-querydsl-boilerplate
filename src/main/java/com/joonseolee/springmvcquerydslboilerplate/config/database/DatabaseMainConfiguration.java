@@ -1,6 +1,5 @@
 package com.joonseolee.springmvcquerydslboilerplate.config.database;
 
-import com.joonseolee.springmvcquerydslboilerplate.config.DatabaseMainProperties;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Qualifier;

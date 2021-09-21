@@ -15,3 +15,13 @@ datasource:
     ddl-auto: none
     show-sql: true
     format-sql: true
+
+operation:
+  swagger:
+    title: boilerplate
+    description: be
+    version: 1.0.0
+    contact-name: joonseolee
+    contact-url: github.com/joonseolee
+    contact-email: niceweather94@gmail.com
+    ant-pattern: /api/**

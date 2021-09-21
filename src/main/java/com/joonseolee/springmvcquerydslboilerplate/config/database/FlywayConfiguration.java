@@ -1,4 +1,4 @@
-package com.joonseolee.springmvcquerydslboilerplate.config;
+package com.joonseolee.springmvcquerydslboilerplate.config.database;
 
 import lombok.RequiredArgsConstructor;
 import org.flywaydb.core.Flyway;
