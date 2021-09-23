@@ -1,3 +1,4 @@
+CREATE SCHEMA IF NOT EXISTS `demo`;
 CREATE TABLE IF NOT EXISTS `demo`.`school` (
                                  `id` int NOT NULL AUTO_INCREMENT,
                                  `isActive` tinyint NOT NULL DEFAULT '1',

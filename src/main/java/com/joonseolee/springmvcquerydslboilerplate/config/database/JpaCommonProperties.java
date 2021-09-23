@@ -14,4 +14,5 @@ public final class JpaCommonProperties {
     private String ddlAuto;
     private String showSql;
     private String formatSql;
+    private String databasePlatform;
 }

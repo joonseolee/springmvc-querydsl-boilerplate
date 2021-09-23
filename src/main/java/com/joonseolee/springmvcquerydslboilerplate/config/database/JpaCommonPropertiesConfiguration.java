@@ -17,6 +17,7 @@ public class JpaCommonPropertiesConfiguration extends Properties {
         this.setProperty("hibernate.hbm2ddl.auto", jpaCommonProperties.getDdlAuto());
         this.setProperty("hibernate.show_sql", jpaCommonProperties.getShowSql());
         this.setProperty("hibernate.format_sql", jpaCommonProperties.getFormatSql());
+        this.setProperty("hibernate.dialect", jpaCommonProperties.getDatabasePlatform());
     }
 
     @Override
